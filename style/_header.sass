@@ -1,0 +1,46 @@
+@import 'colors'
+
+@import 'fonts'
+
+@import 'mixins'
+
+
+header
+  background-color: $header-bgcolor
+
+  .main-content
+    background-blend-mode: luminosity
+    background-color: $header-bgcolor
+    background-image: url('img/hands.png')
+    background-position: center bottom
+    background-repeat: no-repeat
+    display: flex
+    min-height: 118vh
+    padding-bottom: 350px
+
+
+  .about
+    margin: 0 auto
+    max-width: 800px
+    text-align: center
+
+    h2
+      color: $black
+      font-family: $font-raleway
+      margin: 2px
+      padding: 20px
+      text-indent: 10%
+
+
+    p
+      color: $black
+      font-family: $font-lato
+      font-size: $base-font + 6
+      padding: 0 25px
+      text-align: justify
+
+    img
+      +img-dimm(35%, 210px, 210px)
+      margin-top: 30px
+      max-width: 100%
+      

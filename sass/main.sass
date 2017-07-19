@@ -1,0 +1,40 @@
+@import 'style/header'
+
+@import 'style/abilities'
+
+@import 'style/loops'
+
+@import 'style/tools'
+
+@import 'style/learning'
+
+@import 'style/projects'
+
+@import 'style/contact'
+
+@import 'style/footer'
+
+@import 'style/media'
+
+@import 'style/mixins'
+
+
+*
+  box-sizing: border-box
+
+
+body
+  font-family: 'Lato', sans-serif
+  margin: 0
+
+.row
+  +clearfix
+
+
+[class*='col-']
+  float: left
+  min-height: 145px
+  padding: 1px
+
+footer
+  max-height: 90px

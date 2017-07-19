@@ -1,0 +1,38 @@
+@import 'colors'
+
+@import 'mixins'
+
+
+.big-container
+
+  .abilities
+    background-color: $black
+    padding: 18px
+
+    .ability
+      text-align: center
+
+    .ability-description
+      color: $white
+      padding-top: 10px
+
+    .ability-image
+      +transform
+      height: auto
+      margin: 10px
+      max-width: 100%
+
+    .skills
+      text-align: center
+
+      h2
+        +h2
+        display: inline-block
+        position: relative
+        top: 15px
+
+    .border
+      +border
+
+      .line
+        margin: 0

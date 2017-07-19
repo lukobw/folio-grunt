@@ -1,0 +1,45 @@
+@import 'colors'
+
+
+section
+  display: flex
+  justify-content: center
+  padding: 20px
+
+  .contact
+
+    img
+      +img-dimm(50%, 200px, 200px)
+      align-items: center
+      display: flex
+      justify-content: center
+      margin: 0 auto
+
+
+  .contact-info
+    font-size: 18px
+    line-height: 40px
+    padding: 45px
+    text-align: center
+
+    p
+      margin: 0
+
+    a
+      &:hover
+        text-decoration: none
+
+  .fa-5x
+    font-size: 5em
+
+  .my-cv,
+  .git,
+  .linkedin,
+  .mail
+    color: $black
+    margin: 10px
+
+  .icons
+    color: $black
+    display: flex
+    justify-content: center

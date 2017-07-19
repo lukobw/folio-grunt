@@ -1,0 +1,32 @@
+@import 'colors'
+
+@import 'mixins'
+
+
+.technologies
+  background-color: $black
+  padding: 18px
+
+  .border
+    +border
+
+  .ability-description
+    color: $black
+    padding-top: 10px
+
+  .ability
+    text-align: center
+
+    .ability-image
+      +transform
+      margin: 10px
+      min-height: 100px
+
+  .skills
+    text-align: center
+
+    h2
+      +h2
+      display: inline-block
+      position: relative
+      top: 15px

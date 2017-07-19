@@ -1,0 +1,103 @@
+@media only screen and (max-width: 767px)
+
+  @for $i from 1 through 12
+    .col-s-#{$i}
+      width: 100% / 12 * $i
+
+    .ability
+
+      .ability-image:hover
+        transform: none
+
+    .big-container .abilities .border .ability .ability-image img:hover
+      transform: none
+
+    .big-container .technologies .border .ability .ability-image img:hover
+      transform: none
+
+
+    [class*='col-']
+      float: none
+
+    .row
+
+      p
+        font-size: 23px
+        margin-left: 14%
+        max-width: 335px
+        padding: 0 35px
+        text-align: justify
+
+    .description
+
+      .projects
+        border: 0
+        display: flow-root
+        padding: 15px 0
+        max-width: 425px
+
+    img
+      max-width: 320px
+
+    .technologies .skills
+
+      h2
+        font-size: 4vw
+
+    .abilities .skills
+
+      h2
+        font-size: 4vw
+
+    .tools
+
+      h2
+        font-size: 4vw
+
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+
+  @for $i from 1 through 12
+    .col-m-#{$i}
+      width: 100% / 12 * $i
+
+    .big-container .abilities .ability img:hover
+      transform: none
+
+    .big-container .technologies .border .ability .ability-image img:hover
+      transform: none
+
+    .row p
+      font-size: 21px
+      margin-left: 25%
+      max-width: 335px
+      padding: 0 20px
+      text-align: justify
+
+
+
+@media screen and (max-width: 426px)
+
+  header
+
+    .main-content
+      background: none
+      height: 95vh
+
+  .technologies .skills
+
+    h2
+      font-size: 3vw
+
+
+@media screen and (max-width: 375px)
+
+  .row
+
+    p
+      margin-left: 30px
+
+  .main-content
+    height: 100vh
+
+

@@ -1,0 +1,33 @@
+@import 'fonts'
+
+=h2
+  background-color: $black
+  color: $white
+  margin: 0
+  padding: 0 13px
+  text-align: center
+
+=border
+  border: 1px solid $white
+  border-radius: 7px
+  padding: 34px 14px 14px
+
+=transform
+  img
+    transition-duration: 1s
+    transition-property: transform
+
+    &:hover
+      transform: scale(1.3)
+
+=clearfix
+  &::after,
+  &::before
+    clear: both
+    content: ''
+    display: table
+
+=img-dimm($border-radius, $height, $width)
+  border-radius: $border-radius
+  height: $height
+  width: $width
