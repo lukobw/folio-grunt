@@ -1,61 +1,4 @@
-@media only screen and (max-width: 767px)
-
-  @for $i from 1 through 12
-    .col-s-#{$i}
-      width: 100% / 12 * $i
-
-    .ability
-
-      .ability-image:hover
-        transform: none
-
-    .big-container .abilities .border .ability .ability-image img:hover
-      transform: none
-
-    .big-container .technologies .border .ability .ability-image img:hover
-      transform: none
-
-
-    [class*='col-']
-      float: none
-
-    .row
-
-      p
-        font-size: 23px
-        margin-left: 14%
-        max-width: 335px
-        padding: 0 35px
-        text-align: justify
-
-    .description
-
-      .projects
-        border: 0
-        display: flow-root
-        padding: 15px 0
-        max-width: 425px
-
-    img
-      max-width: 320px
-
-    .technologies .skills
-
-      h2
-        font-size: 4vw
-
-    .abilities .skills
-
-      h2
-        font-size: 4vw
-
-    .tools
-
-      h2
-        font-size: 4vw
-
-
-@media screen and (min-width: 768px) and (max-width: 991px)
+@media only screen and (min-width: 769px) and (max-width: 991px)
 
   @for $i from 1 through 12
     .col-m-#{$i}
@@ -76,28 +19,156 @@
 
 
 
-@media screen and (max-width: 426px)
+@media only screen and (max-width: 768px)
+
+  @for $i from 1 through 12
+    .col-m-#{$i}
+      width: 100% / 12 * $i
+
+    header
+
+      .about
+
+        h2
+          font-size: 28px
+          max-width: 418px
+
+        p
+          font-size: 22px
+          letter-spacing: 1px
+          margin-left: 5%
+          max-width: 335px
+          text-align: justify
+          word-break: keep-all
+
+    .main-content
+      height: 183vh
+
+    .big-container
+
+      .abilities
+
+        .border .ability .ability-image img:hover
+          transform: none
+
+        .ability-description
+          padding-top: 0
+
+
+      .technologies
+
+        .border .ability .ability-image img:hover
+          transform: none
+
+        .ability-description
+          padding-top: 0
+
+    [class*='col-']
+      float: none
+
+    .description
+
+      .projects
+        border: 0
+        display: grid
+        max-width: 425px
+        padding: 15px 0
+
+    img
+      max-width: 320px
+
+    .technologies .skills
+
+      h2
+        font-size: 4vw
+
+    .abilities .skills
+
+      h2
+        font-size: 4vw
+
+    .tools
+
+      h2
+        font-size: 4vw
+
+
+
+
+@media only screen and (max-width: 425px)
+
+  @for $i from 1 through 12
+    .col-s-#{$i}
+      width: 100% / 12 * $i
+
+    header
+
+      .main-content
+        background: none
+        height: 130vh
+
+      .about
+
+        p
+          letter-spacing: 0
+          margin: 0 auto
+          padding: 5px
+          word-break: break-word
+
+    .technologies
+
+      .skills
+
+        h2
+          position: relative
+          top: 15px
+          vertical-align: middle
+
+    .box .abilities
+
+      .skills
+
+        h2
+          // position: relative
+          vertical-align: super
+
+      .tools
+
+        h2
+          position: relative
+          top: 10px
+          vertical-align: middle
+
+@media only screen and (max-width: 375px)
 
   header
 
     .main-content
-      background: none
-      height: 95vh
+      max-height: 120vh
+
+    .about
+
+      p
+        line-height: 130%
+        margin: 1%
+
+@media only screen and (max-width: 320px)
+
+  header
+
+    .main-content
+      height: 150vh
+
+    .about
+
+      p
+        font-size: 21px
+        margin: 1%
+        word-break: keep-all
+
+@media only screen and (min-width: 426px)
 
   .technologies .skills
 
-    h2
-      font-size: 3vw
-
-
-@media screen and (max-width: 375px)
-
-  .row
-
-    p
-      margin-left: 30px
-
-  .main-content
-    height: 100vh
-
-
+    br
+      display: none
